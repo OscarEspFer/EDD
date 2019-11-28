@@ -32,4 +32,4 @@
 
 ![imatge](Comparacio.png)
 
-![imatge](Tornar1.4.png)
+![imatge](1.4.png)
