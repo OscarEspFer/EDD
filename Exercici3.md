@@ -30,4 +30,6 @@
 
 10.Com a l’usuari original, visualitzeu les diferències entre les versions, i torneu a la versió 1.2.
 
+![imatge](Comparacio.png)
+
 ![imatge](Tornar1.4.png)
