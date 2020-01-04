@@ -10,16 +10,16 @@ Seguidament, comprovem que funciona
 
 Seguidament, creem el fitxer Makefile, i l'executem.
 
-![imatge](./fotos/PrimerMakeFile)
+![imatge](./fotos/PrimerMakeFile.png)
 
 Modifiquem el Makefile, per que aquest borre els .o residuals
 
-![imatge](./fotos/SegonMakeFile)
+![imatge](./fotos/SegonMakeFile.png)
 
 Tornem a modifical el Makefile, en este cas per a afegir variables, el tornem a executar per veure si funciona correctament.
 
-![imatge](./fotos/TercerMakeFile)
+![imatge](./fotos/TercerMakeFile.png)
 
 Per ultim el tornem a modificar esta vegada per a que amés del anterior, aquest instale el nostre programa, perque puga ser utilitzat desde qualsevol terminal del equip.
 
-![imatge](./fotos/QuartMakeFile)
+![imatge](./fotos/QuartMakeFile.png)
