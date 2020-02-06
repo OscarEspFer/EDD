@@ -1,4 +1,4 @@
-# Maven
+# gradle
 
 Primerament hem de crear l'estructura de carpetes que anem a necessitar, en aquest cas he gastat la ferramenta que ofereix netbeans.
 
