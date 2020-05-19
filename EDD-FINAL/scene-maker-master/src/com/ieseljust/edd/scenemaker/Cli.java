@@ -107,11 +107,56 @@ public class Cli {
                     } catch (Exception e) {
                         // Si s'ha produït algun error als paràmetres, s'indica un error de sintaxi
                         System.out.println(
-                                "\u001B[31m Error de sintaxi. La sintaxi correcta és:\nrectangle x y width height color\u001B[0m");
+                                "\u001B[31m Error de sintaxi. La sintaxi correcta és:\nquadrat x y costat color\u001B[0m");
                     }
                     ;
                     break;
 
+                    
+                case "ellipse":
+                    // Creació d'una figura de la classe cercle
+                    try {
+                        // Extraiem les dimensions
+                        int x = Integer.parseInt((components[1]));
+                        int y = Integer.parseInt((components[2]));
+                        int radi_X = Integer.parseInt((components[3]));
+                        int radi_Y = Integer.parseInt((components[4]));
+                        String color = components[5];
+
+                        // Si tot és correcte creem la figura cercle
+                        Elipse nouElips = new Elipse(x, y, radi_X,radi_Y, this.getColor(color));
+                        // I l'afegim a la llista
+                        AppEscena.add(nouElips);
+
+                    } catch (Exception e) {
+                        // Si s'ha produït algun error als paràmetres, s'indica un error de sintaxi
+                        System.out.println(
+                                "\u001B[31m Error de sintaxi. La sintaxi correcta és:\nellipse x y radiX radiY color\u001B[0m");
+                    }
+                    ;
+                    break;
+                    
+                case "cercle":
+                    // Creació d'una figura de la classe cercle
+                    try {
+                        // Extraiem les dimensions
+                        int x = Integer.parseInt((components[1]));
+                        int y = Integer.parseInt((components[2]));
+                        int radi = Integer.parseInt((components[3]));
+                        String color = components[4];
+
+                        // Si tot és correcte creem la figura cercle
+                        Cercle nouCer = new Cercle(x, y, radi, this.getColor(color));
+                        // I l'afegim a la llista
+                        AppEscena.add(nouCer);
+
+                    } catch (Exception e) {
+                        // Si s'ha produït algun error als paràmetres, s'indica un error de sintaxi
+                        System.out.println(
+                                "\u001B[31m Error de sintaxi. La sintaxi correcta és:\nellipse x y radi color\u001B[0m");
+                    }
+                    ;
+                    break;
                 /*
                  * TO-DO: Aci és on haurem de capturar si es tracta d'altre tipus de figura,
                  * capturar les propietats de la nova figura, crear-la i guardar-la on
