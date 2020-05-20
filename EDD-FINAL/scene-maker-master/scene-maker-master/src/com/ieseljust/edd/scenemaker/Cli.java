@@ -157,6 +157,29 @@ public class Cli {
                     }
                     ;
                     break;
+                    
+                case "linia":
+                    // Creació d'una figura de la classe cercle
+                    try {
+                        // Extraiem les dimensions
+                        int x = Integer.parseInt((components[1]));
+                        int y = Integer.parseInt((components[2]));
+                        int x2 = Integer.parseInt((components[3]));
+                        int y2 = Integer.parseInt((components[4]));
+                        String color = components[5];
+
+                        // Si tot és correcte creem la figura cercle
+                        Linies nouLin = new Linies(x, y, x2, y2, this.getColor(color));
+                        // I l'afegim a la llista
+                        AppEscena.add(nouLin);
+
+                    } catch (Exception e) {
+                        // Si s'ha produït algun error als paràmetres, s'indica un error de sintaxi
+                        System.out.println(
+                                "\u001B[31m Error de sintaxi. La sintaxi correcta és:\nLinia x y x2 y2 color\u001B[0m");
+                    }
+                    ;
+                    break;
                 /*
                  * TO-DO: Aci és on haurem de capturar si es tracta d'altre tipus de figura,
                  * capturar les propietats de la nova figura, crear-la i guardar-la on

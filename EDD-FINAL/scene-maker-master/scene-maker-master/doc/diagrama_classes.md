@@ -2,7 +2,7 @@
 
 El diagrama de classes de l'aplicació és el següent.
 
-![Diagrama de classes](img/diagrama_classes.png)
+![Diagrama de classes](img/diagrama_classes.bmp)
 
 Com podeu comprovar, el sistema d'inici ja consta de diverses classes i interfícies. A continuació es mostra una breu descripció de les més importants.
 
@@ -38,6 +38,22 @@ La forma d'implementar la CLI segueix un patró de programació bastant comú, b
                 case "rectangle":
                     // Execució del cas d'ús "Afegir Rectangle"
                     break;
+					
+				 case "quadrat":
+                    // Execució del cas d'ús "Afegir quadrat"
+                    break;
+				
+				 case "ellipse":
+                    // Execució del cas d'ús "Afegir El·lipse"
+                    break;
+					
+				 case "cercle":
+                    // Execució del cas d'ús "Afegir Cercle"
+                    break;
+					
+				 case "linia":
+                    // Execució del cas d'ús "Afegir Linia"
+                    break;
 
                 case "get":
                     // Execució del cas d'ús "Descarregar Escena"
@@ -68,7 +84,7 @@ Per altra banda, com veiem, aquesta classe té una dependència amb la classe `R
 
 ## Classe `com.ieseljust.edd.scenemaker.Escena`
 
-Representa el conjunt de figures (rectangles) de l'escena. Com veiem, té com a atributs el tamany de l'escena, especificat en píxels, i una llista de rectangles.
+Representa el conjunt de figures de l'escena. Com veiem, té com a atributs el tamany de l'escena, especificat en píxels, i una llista de figures.
 
 En quant a mètodes, aquesta presenta els diferent *mètodes accessors* (*gets* i *sets* per als atributs), un parell de constructors, i el més important: el mètode `add(figura)` per afegir un nou element a aquesta llista, així com els mètodes `renderText()` per mostar pel terminal la llista de figures, i `render`, per generar l'escena.
 
@@ -76,5 +92,20 @@ Per altra banda, aquesta classe té una dependència de la classe `Renderer`, qu
 
 ## Classe `com.ieseljust.edd.scenemaker.Rectangle`
 
-Aquesta classe representa els rectangles que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats de posicionament i dimensions del rectangle, així com el color. Com a mètodes, aporta diferents constructors, els mètodes accessors, i dos mètodes més: `describeMe`, que escriu per consola una descripció del rectangle, i `render(Graphics g)` que dibuixa el rectangle sobre un context gràfic. Com veiem, la nostra classe rectangle, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.
+Aquesta classe representa els rectangles que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats del tamany del rectangle, així com el color. Com a mètodes, aporta un constructor, i dos mètodes més: `describeMe`, que escriu per consola una descripció del rectangle, i `render(Graphics g)` que dibuixa el rectangle sobre un context gràfic. Com veiem, la nostra classe rectangle, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.
 
+## Classe `com.ieseljust.edd.scenemaker.Quadrat`
+
+Aquesta classe representa els quadrats que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats del tamany del quadrat, així com el color. Com a mètodes, aporta un constructor, i dos mètodes més: `describeMe`, que escriu per consola una descripció del quadrat, i `render(Graphics g)` que dibuixa el quadrat sobre un context gràfic. Com veiem, la nostra classe quadrat, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.
+
+## Classe `com.ieseljust.edd.scenemaker.Cercle`
+
+Aquesta classe representa els cercles que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats del tamany del cercle, així com el color. Com a mètodes, aporta un constructor, i dos mètodes més: `describeMe`, que escriu per consola una descripció del cercle, i `render(Graphics g)` que dibuixa el cercle sobre un context gràfic. Com veiem, la nostra classe cercle, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.
+
+## Classe `com.ieseljust.edd.scenemaker.Ellipse`
+
+Aquesta classe representa els ellipses que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats del tamany del ellipse, així com el color. Com a mètodes, aporta un constructor, i dos mètodes més: `describeMe`, que escriu per consola una descripció del ellipse, i `render(Graphics g)` que dibuixa el ellipse sobre un context gràfic. Com veiem, la nostra classe ellipse, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.
+
+## Classe `com.ieseljust.edd.scenemaker.Linia`
+
+Aquesta classe representa els linies que dibuixarem a l'escena. Com veiem, és una classe bastant senzilla, amb les propietats del tamany del linie, així com el color. Com a mètodes, aporta un constructor, i dos mètodes més: `describeMe`, que escriu per consola una descripció del linie, i `render(Graphics g)` que dibuixa el linie sobre un context gràfic. Com veiem, la nostra classe linie, implementa la interfície `Renderizable`, que simplement ens *obliga* a implementar el mètode *render*.

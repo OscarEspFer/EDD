@@ -2,12 +2,121 @@
 
 El diagrama de casos d'ús de l'aplicació és el següent.
 
-![Diagrama de casos d'ús](img/casos_us.png)
+![Diagrama de casos d'ús](img/casos_us.bmp)
 
 Veiem la descripió de cada cas:
 
-
 ## Cas d'ús: SM01
+
+**Nom**: Afegir linies
+
+**Actors**: Usuari
+
+**Descripció**
+
+L'usuari afig un nou linies a l'escena.
+
+**Precondicions**:
+*cap*
+
+**Seqüència normal**
+
+1. L'usuari introdueix les propietats del linies (posició, tamany i color) en la CLI.
+2. El sistema afig el linies a l'escena i informa l'usuari que s'ha inserit correctament.
+
+**Postcondicions**
+
+S'ha afegit un nou linies a l'escena.
+
+**Excepcions**
+
+1.1. Si la sintaxi no es correspon a la del linies, mostra un missatge avisant de l'error i mostrant la sintaxi correcta.
+1.2. Si la posició del linies cau fora de l'àrea de dibuix, mostra un missatge d'error i no l'afig.
+
+## Cas d'ús: SM02
+
+**Nom**: Afegir cercle
+
+**Actors**: Usuari
+
+**Descripció**
+
+L'usuari afig un nou cercle a l'escena.
+
+**Precondicions**:
+*cap*
+
+**Seqüència normal**
+
+1. L'usuari introdueix les propietats del cercle (posició, tamany i color) en la CLI.
+2. El sistema afig el cercle a l'escena i informa l'usuari que s'ha inserit correctament.
+
+**Postcondicions**
+
+S'ha afegit un nou cercle a l'escena.
+
+**Excepcions**
+
+1.1. Si la sintaxi no es correspon a la del cercle, mostra un missatge avisant de l'error i mostrant la sintaxi correcta.
+1.2. Si la posició del cercle cau fora de l'àrea de dibuix, mostra un missatge d'error i no l'afig.
+
+## Cas d'ús: SM03
+
+**Nom**: Afegir ellipse
+
+**Actors**: Usuari
+
+**Descripció**
+
+L'usuari afig un nou ellipse a l'escena.
+
+**Precondicions**:
+*cap*
+
+**Seqüència normal**
+
+1. L'usuari introdueix les propietats del ellipse (posició, tamany i color) en la CLI.
+2. El sistema afig el ellipse a l'escena i informa l'usuari que s'ha inserit correctament.
+
+**Postcondicions**
+
+S'ha afegit un nou ellipse a l'escena.
+
+**Excepcions**
+
+1.1. Si la sintaxi no es correspon a la del ellipse, mostra un missatge avisant de l'error i mostrant la sintaxi correcta.
+1.2. Si la posició del ellipse cau fora de l'àrea de dibuix, mostra un missatge d'error i no l'afig.
+
+
+## Cas d'ús: SM04
+
+**Nom**: Afegir quadrat
+
+**Actors**: Usuari
+
+**Descripció**
+
+L'usuari afig un nou quadrat a l'escena.
+
+**Precondicions**:
+*cap*
+
+**Seqüència normal**
+
+1. L'usuari introdueix les propietats del quadrat (posició, tamany i color) en la CLI.
+2. El sistema afig el quadrat a l'escena i informa l'usuari que s'ha inserit correctament.
+
+**Postcondicions**
+
+S'ha afegit un nou quadrat a l'escena.
+
+**Excepcions**
+
+1.1. Si la sintaxi no es correspon a la del quadrat, mostra un missatge avisant de l'error i mostrant la sintaxi correcta.
+1.2. Si la posició del quadrat cau fora de l'àrea de dibuix, mostra un missatge d'error i no l'afig.
+
+
+## Cas d'ús: SM05
 
 **Nom**: Afegir rectangle
 
@@ -34,7 +143,7 @@ S'ha afegit un nou rectangle a l'escena.
 1.1. Si la sintaxi no es correspon a la del rectangle, mostra un missatge avisant de l'error i mostrant la sintaxi correcta.
 1.2. Si la posició del rectangle cau fora de l'àrea de dibuix, mostra un missatge d'error i no l'afig.
 
-## Cas d'ús: SM02
+## Cas d'ús: SM06
 
 **Nom**: Estableix les dimensions de l'escena
 
@@ -60,7 +169,7 @@ Les dimensions de l'escena s'han modificat.
 
 1.1. Si la sintaxi no és correcta ho notifca a l'usuari.
 
-## Cas d'ús: SM03
+## Cas d'ús: SM07
 
 **Nom**: Llistar figures en escena
 
@@ -86,7 +195,7 @@ L'usuari obté un llistat am les diferents figures de l'escena.
 
 *cap*
 
-## Cas d'ús: SM04
+## Cas d'ús: SM08
 
 **Nom**: Llistar Escenes en Servidor
 
@@ -111,7 +220,7 @@ Es requereix d'accés a Internet per poder accedir a servidor (no es comprova pr
 **Excepcions**
 2.1. Si no hi ha connexió a Internet, el sistema mostrarà un missatge d'error.
 
-## Cas d'ús: SM05
+## Cas d'ús: SM09
 
 **Nom**: Descarrega Escena
 
@@ -138,7 +247,7 @@ L'escena s'ha incorporat en el sisema
 2.1. Si el fitxer no existeix, el sistema mostra nu error en la càrrega del fitxer.
 3.1. Si alguna figura no està especificada correctament al fitxer, s'informarà a l'usuari i no s'afegirà a l'escena.
 
-## Cas d'ús: SM06
+## Cas d'ús: SM10
 
 **Nom**: Dibuixar Escena
 
